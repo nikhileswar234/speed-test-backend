@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: speed-test-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
